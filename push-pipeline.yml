@@ -1,0 +1,14 @@
+name: push-pipeline
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: 'Build'
+    script:
+      - g++ -o program main.cpp
+  test:
+    name: 'Test'
+    script:
+      - ./program
