@@ -1,14 +1,14 @@
-name: push-pipeline
-on:
-  push:
-    branches:
-      - main
-jobs:
-  build:
-    name: 'Build'
-    script:
-      - g++ -o program main.cpp
-  test:
-    name: 'Test'
-    script:
-      - ./program
+kind: pipeline
+type: docker
+name: my-first-build
+
+steps:
+  - name: build
+    image: alpine
+    commands:
+      - echo "build step executed"
+
+  - name: deploy
+    image: alpine
+    commands:
+      - echo "deploy step executed"
