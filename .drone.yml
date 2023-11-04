@@ -15,7 +15,7 @@ steps:
       - echo "build step executed"
   
   - name: compile
-    image: gcc:11
+    image: gcc
     commands:
       - g++ -o my_program main.cpp
       
