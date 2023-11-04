@@ -11,9 +11,12 @@ trigger:
 steps:
   - name: build
     image: alpine
+    enviroment: 
+      PWD:
     commands:
       - echo "build step executed"
       - apk add gcc
+      - $PWD = pwd
   
   - name: compile
     image: gcc
