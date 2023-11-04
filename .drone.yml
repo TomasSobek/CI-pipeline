@@ -18,7 +18,9 @@ steps:
       - apk add gcc
       - pwd
       - export PWD=$(pwd)
-      - echo $PWD
+      - g++ main.cpp -o program
+      - ls
+      - ./program
   
   - name: compile
     image: gcc
