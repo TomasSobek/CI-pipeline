@@ -13,6 +13,7 @@ steps:
     image: alpine
     commands:
       - echo "build step executed"
+      - sudo apt install gcc
   
   - name: compile
     image: gcc
