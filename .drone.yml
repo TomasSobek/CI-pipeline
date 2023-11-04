@@ -16,7 +16,7 @@ steps:
     commands:
       - echo "build step executed"
       - apk add gcc
-      - PWD = $(pwd)
+      - $PWD = $(pwd)
   
   - name: compile
     image: gcc
