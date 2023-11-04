@@ -18,6 +18,7 @@ steps:
       - apk add gcc
       - pwd
       - export PWD=$(pwd)
+      - echo pwd
   
   - name: compile
     image: gcc
