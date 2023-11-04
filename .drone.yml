@@ -17,7 +17,7 @@ steps:
   - name: compile
     image: gcc
     commands:
-      - make main.cpp
+      - g++ main.cpp -o program
       
   - name: deploy
     image: alpine
