@@ -13,9 +13,12 @@ steps:
     image: alpine
     commands:
       - echo "build step executed"
-      - g++ -o main main.cpp
-      - ./main
-
+  
+  - name: compile
+    image: gcc:11
+    commands:
+      - g++ -o my_program main.cpp
+      
   - name: deploy
     image: alpine
     commands:
