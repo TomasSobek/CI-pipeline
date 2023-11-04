@@ -15,6 +15,7 @@ steps:
       PWD: ""
     commands:
       - echo "build step executed"
+      - apk update
       - apk add gcc
       - pwd
       - export PWD=$(pwd)
