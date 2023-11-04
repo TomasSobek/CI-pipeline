@@ -16,7 +16,7 @@ steps:
     commands:
       - echo "build step executed"
       - apk update
-      - apk add gcc
+      - apk add g++
       - pwd
       - export PWD=$(pwd)
       - g++ main.cpp -o program
