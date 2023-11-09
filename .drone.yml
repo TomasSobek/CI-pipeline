@@ -22,7 +22,7 @@ steps:
       - g++ main.cpp -o program
       - ls
       - ./program
-      - echo PWD
+      - echo $PWD
   
   - name: compile
     image: gcc
